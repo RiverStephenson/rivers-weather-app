@@ -14,6 +14,7 @@ console.log(process.env.API_BASE_URL);
 router.post('/', (_req: Request, res: Response) => {
   res.status(418).send("this hasn't been implemented yet")
   // TODO: GET weather data from city name
+  
   // TODO: save city to search history
 });
 
