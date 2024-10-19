@@ -32,11 +32,18 @@ class Weather {
 // TODO: Complete the WeatherService class
 class WeatherService {
   // TODO: Define the baseURL, API key, and city name properties
+private baseURL: string;
+private apiKey: string;
+private cityName = "";
+constructor() {
+  this.baseURL = process.env.API_BASE_URL;
+  this.apiKey = process.env.API_KEY
 
-
+}
 
   // TODO: Create buildWeatherQuery method
-  // private buildWeatherQuery(coordinates: Coordinates): string {}
+  private buildWeatherQuery(coordinates: Coordinates): string {}
+  const query = `${this.baseURL}/data/2.5/weather?id=${this.cityName}&appid=${this.apiKey}`
 
   // TODO: Create fetchWeatherData method
   // private async fetchWeatherData(coordinates: Coordinates) {}
